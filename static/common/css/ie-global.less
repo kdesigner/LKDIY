@@ -1,0 +1,67 @@
+﻿@import "variable";
+@import "lesshat";
+
+/******************************************************
+   *Styling For IE START
+******************************************************/
+/*kuljit*/
+.after-login-sections-padding ol{
+  margin-left: 20px;
+}
+html[data-browser='8'],html[data-browser='9']{
+  .side-bar {
+
+    > ul {
+
+      > li {
+
+        > a {
+          line-height: 14px;
+        }
+      }
+    }
+  }
+  .cart-column {
+    .cart-btn {
+
+      &:hover {
+        border-color: @CartBtnBorder !important;
+
+      }
+    }
+  }
+  .www-popular-scene-title{
+    span{
+      display: inline-block;
+      background: #000;
+      line-height: 25px;
+      padding: 5px 10px;
+      .opacity(0.8);
+    }
+  }
+}
+/******************************************************
+   *Styling For IE END
+******************************************************/
+
+
+
+/******************************************************
+   *Styling For IE 10 and greater START
+******************************************************/
+html[data-browser='11'],html[data-browser='10']{
+  .side-bar {
+    > ul {
+
+      > li {
+
+        > a {
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}
+/******************************************************
+   *Styling For IE 10 and greater END
+******************************************************/
