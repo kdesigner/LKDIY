@@ -690,9 +690,9 @@
               content: '';
               width: 0;
               height: 0;
-              border-left:9px solid transparent;
-              border-right:9px solid transparent;
-              border-bottom:9px solid @white;
+              border-left:14px solid transparent;
+              border-right:14px solid transparent;
+              border-bottom:11px solid @white;
               position: absolute;
               left: 0;
               bottom:0;
@@ -701,7 +701,7 @@
               text-align: center;
             }
           }
-        }/*kuljit*/
+        }
         &.active{
           a:after{
             content: '';
@@ -761,15 +761,15 @@
 
   .login-sidebar-block{
     margin-bottom:41px;
-/*kuljit*/
-   &.last-child{
+
+    &.last-child{
       margin-bottom: 0;
     }
 
     h5{
       color: #222222;
       font-size: 16px;
-      margin-bottom:9px;
+      margin-bottom: 9px;
       margin-top: 0;
     }
 
@@ -853,9 +853,18 @@
 
 .after-login-sections-padding{
   padding: 30px;
+
+  .btn-primary{
+    padding: 11px 25px;
+    color: @white;
+    font-size: @baseFontLarge;
+    background-color: @loginSidebarLinkHover;
+    border-color: @loginSidebarLinkHover;
+    margin-top: 18px;
+    border-radius: 0;
+  }
   ol{
-    /**/
-    margin-left: 15px;
+    margin-left: 12px;
     margin-top: 28px;
     color: @footerCopyrightTextColor;
     font-size: @baseFontLarge;
@@ -871,15 +880,6 @@
   .sui-form.form-horizontal .control-group.margin-bottom-0{
     margin-bottom: 0;
   }
-}
-.btn-primary{
-  padding: 11px 25px;
-  color: @white;
-  font-size: @baseFontLarge;
-  background-color: @loginSidebarLinkHover;
-  border-color: @loginSidebarLinkHover;
-  margin-top: 18px;
-  border-radius: 0;
 }
 /******************************************************
    *After Login Right Section Ends
@@ -925,9 +925,27 @@
 }
 
 /*--- page title with logo ---*/
-/*kuljit*/
 .page-title-with-logo{
   font-size:24px;
   color: @baseTextColorDark;
   margin-top: 35px;
+}
+
+/*******************Error message styling***********************/
+.sui-form.form-horizontal.sui-validate{
+  .sui-msg.msg-error  .msg-con{
+    background-color: #fff2f2;
+    border-color: #c41411;
+    width: 268px;
+    padding: 8px 26px;
+
+  }
+  .msg-icon{
+    top: 6px;
+    font-size: 18px;
+    &:before{
+      content: "\e6e4";
+      font-family: 'icon-tb';
+    }
+  }
 }

@@ -1,0 +1,209 @@
+@import "../../common/css/variable";
+@import "../../common/css/lesshat";
+
+/* return top progress bar start*/
+.trade-top-return-progress-bar{
+  .sui-steps-round{
+    padding: 0;
+  }
+  .round, .bar {
+    background-color: rgb(242, 242, 242);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35),inset 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+    height: 32px;
+    z-index: 54;
+    &.bar{
+      margin: 10px 0 0 20px;
+      border-radius: 0;
+    }
+    &.round{
+      background-color: transparent;
+      border: 0;
+    }
+  }
+}
+/* return top progress bar end*/
+
+
+/* return products detail start*/
+.trade-product-detail-and-status-section{
+  background-color: @white;
+  padding: 20px 20px 0;
+  border:1px solid #cccccc ;
+
+  .trade-product-detail-and-status-section-top{
+    margin-bottom: 10px;
+  }
+
+  p{
+    display: inline-block;
+    margin-bottom: 0;
+
+    &.trade-order-number, &.trade-order-status{
+      color: @footerCopyrightTextColor;
+      font-size: @baseFontLarge;
+
+      span{
+        color: @baseTextColor;
+      }
+    }
+  }
+  .trade-single-product-detail-row{
+    padding:20px 5px 20px 15px;
+    border-top: 1px solid #cccccc;
+    display: table;
+
+    .trade-checkbox{
+      float: left;
+      position: relative;
+      margin-top: 15px;
+    }
+
+    .trade-product-thumb-name{
+      width: 900px;
+      float: left;
+      img{
+        width: 52px;
+        height: 52px;
+        display: inline;
+        vertical-align: top;
+        margin-left: 22px;
+        margin-right: 22px;
+      }
+
+      .trade-product-name-point-cross{
+        width:804px;
+        display: inline-block;
+        line-height: normal;
+        float: right;
+
+        h2{
+          margin:0 0 16px;
+          line-height: normal;
+          font-size: @baseFontLarge;
+          color: @baseTextColorDark;
+          font-weight: normal;
+        }
+
+        span{
+          font-size: @baseFontLarge;
+          color: @footerCopyrightTextColor;
+          &.trade-corss{
+            float: right;
+            color: @baseTextColor;
+          }
+        }
+      }
+    }
+  }
+}
+/* return products detail end*/
+
+/* return form  start*/
+.trade-forms{
+  margin-top: 32px;
+
+  em{
+    color: @loginSidebarLinkHover;
+    font-size: @baseFontLarge;
+    font-weight: bold;
+    margin-right: 2px;
+  }
+  .double-input input[type="text"]{
+    background-color: @white;
+    width: 180px;
+  }
+  .double-input select{
+    background-color: @white;
+    width: 180px;
+  }
+
+  .user-custom-file-upload-btn{
+    position: relative;
+    z-index: 9999;
+    input{
+      height: 40px;
+      .opacity(0) ;
+      width: 185px;
+      cursor: pointer;
+    }
+  }
+
+  .www-file-upload{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    .opacity(1) ;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 10px 25px;
+
+    img{
+      margin-right: 5px;
+    }
+  }
+
+}
+.after-login-right-content-section form textarea{
+  background-color: @white;
+  height: 80px;
+  width: 300px;
+}
+.after-login-right-content-section .sui-form.form-horizontal .control-label.vertical-align-top{
+  vertical-align: top;
+}
+/* return form end*/
+
+
+/*common css*/
+.after-login-tabs-design{
+  .sui-nav.nav-tabs.tab-wraped {
+    background-color: @white;
+    padding: 13px 20px;
+    border: 0;
+    li {
+      width: auto;
+      padding: 5px;
+    &.active a, a{
+      border: 0;
+      padding: 0;
+      padding: 0 30px;
+      border-right: 1px solid #cccccc;
+
+      &.padding-left-zero{
+        padding-left: 0;
+      }
+
+      &.border-right-zero{
+        border-right: 0;
+      }
+    }
+      &.active a h3{
+        color: @loginSidebarLinkHover;
+        border-bottom: 1px solid @loginSidebarLinkHover;
+        padding-bottom: 2px;
+      }
+      h3 {
+        font-weight: normal;
+        margin: 0;
+        font-size: 16px;
+        color: @baseTextColor;
+        line-height: normal;
+      }
+    }
+  }
+  .tab-content.tab-wraped{
+    background-color: @white;
+    border: 0;
+    margin-top: 5px;
+  }
+}
+
+
+/*global css*/
+.padding-left-zero{
+  padding-left: 0;
+}
+.border-right-zero{
+  border-right: 0;
+}

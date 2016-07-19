@@ -1,0 +1,198 @@
+/******************************************************
+   *Variables START
+******************************************************/
+/* return top progress bar start*/
+.trade-top-return-progress-bar .sui-steps-round {
+  padding: 0;
+}
+.trade-top-return-progress-bar .round,
+.trade-top-return-progress-bar .bar {
+  background-color: #f2f2f2;
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35), inset 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  height: 32px;
+  z-index: 54;
+}
+.trade-top-return-progress-bar .round.bar,
+.trade-top-return-progress-bar .bar.bar {
+  margin: 10px 0 0 20px;
+  border-radius: 0;
+}
+.trade-top-return-progress-bar .round.round,
+.trade-top-return-progress-bar .bar.round {
+  background-color: transparent;
+  border: 0;
+}
+/* return top progress bar end*/
+/* return products detail start*/
+.trade-product-detail-and-status-section {
+  background-color: #fff;
+  padding: 20px 20px 0;
+  border: 1px solid #cccccc ;
+}
+.trade-product-detail-and-status-section .trade-product-detail-and-status-section-top {
+  margin-bottom: 10px;
+}
+.trade-product-detail-and-status-section p {
+  display: inline-block;
+  margin-bottom: 0;
+}
+.trade-product-detail-and-status-section p.trade-order-number,
+.trade-product-detail-and-status-section p.trade-order-status {
+  color: #999999;
+  font-size: 14px;
+}
+.trade-product-detail-and-status-section p.trade-order-number span,
+.trade-product-detail-and-status-section p.trade-order-status span {
+  color: #666666;
+}
+.trade-product-detail-and-status-section .trade-single-product-detail-row {
+  padding: 20px 5px 20px 15px;
+  border-top: 1px solid #cccccc;
+  display: table;
+}
+.trade-product-detail-and-status-section .trade-single-product-detail-row .trade-checkbox {
+  float: left;
+  position: relative;
+  margin-top: 15px;
+}
+.trade-product-detail-and-status-section .trade-single-product-detail-row .trade-product-thumb-name {
+  width: 900px;
+  float: left;
+}
+.trade-product-detail-and-status-section .trade-single-product-detail-row .trade-product-thumb-name img {
+  width: 52px;
+  height: 52px;
+  display: inline;
+  vertical-align: top;
+  margin-left: 22px;
+  margin-right: 22px;
+}
+.trade-product-detail-and-status-section .trade-single-product-detail-row .trade-product-thumb-name .trade-product-name-point-cross {
+  width: 804px;
+  display: inline-block;
+  line-height: normal;
+  float: right;
+}
+.trade-product-detail-and-status-section .trade-single-product-detail-row .trade-product-thumb-name .trade-product-name-point-cross h2 {
+  margin: 0 0 16px;
+  line-height: normal;
+  font-size: 14px;
+  color: #333333;
+  font-weight: normal;
+}
+.trade-product-detail-and-status-section .trade-single-product-detail-row .trade-product-thumb-name .trade-product-name-point-cross span {
+  font-size: 14px;
+  color: #999999;
+}
+.trade-product-detail-and-status-section .trade-single-product-detail-row .trade-product-thumb-name .trade-product-name-point-cross span.trade-corss {
+  float: right;
+  color: #666666;
+}
+/* return products detail end*/
+/* return form  start*/
+.trade-forms {
+  margin-top: 32px;
+}
+.trade-forms em {
+  color: #d01716;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 2px;
+}
+.trade-forms .double-input input[type="text"] {
+  background-color: #fff;
+  width: 180px;
+}
+.trade-forms .double-input select {
+  background-color: #fff;
+  width: 180px;
+}
+.trade-forms .user-custom-file-upload-btn {
+  position: relative;
+  z-index: 9999;
+}
+.trade-forms .user-custom-file-upload-btn input {
+  height: 40px;
+  zoom: 1;
+  filter: alpha(opacity=0);
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  width: 185px;
+  cursor: pointer;
+}
+.trade-forms .www-file-upload {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  zoom: 1;
+  filter: alpha(opacity=100);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 10px 25px;
+}
+.trade-forms .www-file-upload img {
+  margin-right: 5px;
+}
+.after-login-right-content-section form textarea {
+  background-color: #fff;
+  height: 80px;
+  width: 300px;
+}
+.after-login-right-content-section .sui-form.form-horizontal .control-label.vertical-align-top {
+  vertical-align: top;
+}
+/* return form end*/
+/*common css*/
+.after-login-tabs-design .sui-nav.nav-tabs.tab-wraped {
+  background-color: #fff;
+  padding: 13px 20px;
+  border: 0;
+}
+.after-login-tabs-design .sui-nav.nav-tabs.tab-wraped li {
+  width: auto;
+  padding: 5px;
+}
+.after-login-tabs-design .sui-nav.nav-tabs.tab-wraped li.active a,
+.after-login-tabs-design .sui-nav.nav-tabs.tab-wraped li a {
+  border: 0;
+  padding: 0;
+  padding: 0 30px;
+  border-right: 1px solid #cccccc;
+}
+.after-login-tabs-design .sui-nav.nav-tabs.tab-wraped li.active a.padding-left-zero,
+.after-login-tabs-design .sui-nav.nav-tabs.tab-wraped li a.padding-left-zero {
+  padding-left: 0;
+}
+.after-login-tabs-design .sui-nav.nav-tabs.tab-wraped li.active a.border-right-zero,
+.after-login-tabs-design .sui-nav.nav-tabs.tab-wraped li a.border-right-zero {
+  border-right: 0;
+}
+.after-login-tabs-design .sui-nav.nav-tabs.tab-wraped li.active a h3 {
+  color: #d01716;
+  border-bottom: 1px solid #d01716;
+  padding-bottom: 2px;
+}
+.after-login-tabs-design .sui-nav.nav-tabs.tab-wraped li h3 {
+  font-weight: normal;
+  margin: 0;
+  font-size: 16px;
+  color: #666666;
+  line-height: normal;
+}
+.after-login-tabs-design .tab-content.tab-wraped {
+  background-color: #fff;
+  border: 0;
+  margin-top: 5px;
+}
+/*global css*/
+.padding-left-zero {
+  padding-left: 0;
+}
+.border-right-zero {
+  border-right: 0;
+}

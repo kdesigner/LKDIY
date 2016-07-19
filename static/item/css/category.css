@@ -26,6 +26,13 @@
 .item-selected-filters label.item-tag + label {
   margin-left: 10px;
 }
+.item-category-filters .custom-breadcrumb {
+  display: inline-block;
+  margin-right: 20px;
+}
+.item-category-filters .item-selected-filters {
+  display: inline-block;
+}
 .item-form-filters {
   border-top: 3px solid #dedede;
 }
@@ -64,6 +71,9 @@
   line-height: 15px;
   vertical-align: middle;
   border-radius: 2px;
+}
+.item-form-filters .item-form-filters-row .item-filter-btn-set .item-more-btn span.icon-sort-up {
+  line-height: 24px;
 }
 .item-form-filters .item-form-filters-row .item-filter-btn-set .item-more-btn:hover,
 .item-form-filters .item-form-filters-row .item-filter-btn-set .item-more-btn.active {
@@ -150,6 +160,9 @@
   padding: 0;
   margin: 0;
 }
+.item-form-filters .item-checkbox-radio-list.item-multiple-list {
+  display: none;
+}
 .item-form-filters .item-checkbox-radio-list li {
   float: left;
   min-width: 90px;
@@ -187,6 +200,9 @@
   margin-bottom: 8px;
   white-space: nowrap;
 }
+.item-form-filters .item-checkbox-radio-list li.item-more {
+  display: none;
+}
 .item-form-filters .item-checkbox-radio-list.item-checkbox-radio-list-wide li {
   width: 150px;
 }
@@ -214,7 +230,8 @@
 }
 .item-form-filters .item-more-filter {
   text-align: left;
-  margin-left: 63px;
+  display: block;
+  width: 100%;
 }
 .item-form-filters .item-more-filter .item-input-filter {
   height: 26px;
@@ -550,8 +567,8 @@
 }
 /*--- category empty start ---*/
 .item-category-empty {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .item-category-empty p {
   font-size: 14px;
@@ -573,7 +590,6 @@
 .item-best-products-section .item-top-heading-and-pages {
   border-bottom: 1px solid #f2f2f2;
   padding-bottom: 10px;
-  /*kuljit*/
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -591,7 +607,6 @@
   margin: 0;
   display: inline;
   float: right;
-  /*kuljit*/
 }
 .item-best-products-section .item-top-heading-and-pages p span {
   float: left;
@@ -607,7 +622,6 @@
 }
 .item-best-products-section .item-single-product {
   width: 235px;
-  /*kuljit*/
   padding: 18px 15px;
   min-height: 352px;
   margin-bottom: 0;

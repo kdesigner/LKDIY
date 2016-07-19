@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <title>LKDIY</title>
-    <link rel="stylesheet" href="../../static/common/plugins/sui/css/sui.min.css">
+    <link rel="stylesheet" href="../../static/common/plugins/sui/css/sui-all.min.css">
     <link rel="stylesheet" href="../../static/common/css/global.css">
     <link rel="stylesheet" href="../../static/common/css/common.css">
-    <link rel="stylesheet" href="../../static/user/css/change-password.css">
+    <link rel="stylesheet" href="../../static/trade/css/return.css">
 </head>
 <body>
 <!-- Top Navbar START -->
@@ -146,65 +146,133 @@
                 <h5>安全中心</h5>
                 <ul>
                     <li><a href="#">修改密码</a> </li>
-                    <li><a href="#" class="active">绑定邮箱</a> </li>
+                    <li><a href="#" class="active last-child-link">绑定邮箱</a> </li>
                 </ul>
             </div>
         </div>
         <!-- Login Sidebar End -->
-        <!-- Verify Mail Section Start-->
+        <!-- Return Section Start-->
         <div class="column after-login-right-content-section">
-            <div class="user-mail-verify-top-section grey-bg margin-bottom-30 after-login-sections-padding">
-                <h5 class="heading">修改登录密码</h5>
-                <form class="sui-form form-horizontal user-change-password sui-validate">
-                    <div class="control-group">
-                        <label class="control-label">已验证手机：</label>
-                        <div class="controls single-input">
-                            <span class="sui-text-left">187*****854</span>
-                        </div>
+            <div class="grey-bg after-login-sections-padding width-100 ">
+                <h5 class="heading">退换货</h5>
+                    <div class="trade-top-return-progress-bar">
+                        Progress Bar
                     </div>
-                    <div class="control-group">
-                        <label class="control-label">请填写手机校验码：</label>
-                        <div class="controls double-input">
-                            <input type="text" name="demo1" class="grey-bg" data-rules="required|email"/>
-                            <input type="button" value="获取短信校验码" class="sui-btn btn-xlarge"/>
+                    <div class="trade-product-detail-and-status-section">
+                        <div class="trade-product-detail-and-status-section-top">
+                            <p class="trade-order-number">
+                                订单号 : <span>1258654566</span>
+                            </p>
+                            <p class="trade-order-status float-right">
+                                状态：买家申请退款
+                            </p>
                         </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label">原始密码：</label>
-                        <div class="controls double-input">
-                            <input type="password" name="demo2" class="grey-bg" data-rules="required"/>
+                        <div class="trade-single-product-detail-row width-100">
+                            <span class="trade-checkbox">
+                                <label class="checkbox-pretty inline ">
+                                    <input type="checkbox" /><span></span>
+                                </label>
+                            </span>
+                            <div class="trade-product-thumb-name">
+                                <img src="../../static/trade/images/product-thumb.jpg"/>
+                                <div class="trade-product-name-point-cross">
+                                    <h2>iPhone 6s plus 近代 软壳纯定制  6s plus 近代 软壳纯定制  6s plus 近代 软壳纯定制 （经典款）</h2>
+                                    <span class="trade-product-points">90积分+￥68</span>
+                                    <span class="trade-corss">X1</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label">新密码：</label>
-                        <div class="controls double-input">
-                            <input type="password" name="demo3" class="grey-bg" data-rules="required"/>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label">确认密码：</label>
-                        <div class="controls double-input">
-                            <input type="password" name="demo4" class="grey-bg" data-rules="required"/>
-                        </div>
-                    </div>
 
-                    <div class="control-group margin-bottom-0">
-                        <label class="control-label"></label>
-                        <div class="controls">
-                            <button type="submit" class="sui-btn btn-primary">提交</button>
+                        <div class="trade-single-product-detail-row width-100">
+                            <span class="trade-checkbox">
+                               <label class="checkbox-pretty inline">
+                                   <input type="checkbox" checked="checked"/><span></span>
+                               </label>
+                            </span>
+                            <div class="trade-product-thumb-name">
+                                <img src="../../static/trade/images/product-thumb.jpg"/>
+                                <div class="trade-product-name-point-cross">
+                                    <h2>iPhone 6s plus 近代 软壳纯定制  6s plus 近代 软壳纯定制  6s plus 近代 软壳纯定制 （经典款）</h2>
+                                    <span class="trade-product-points">90积分+￥68</span>
+                                    <span class="trade-corss">X1</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="trade-forms after-login-tabs-design">
+                        <ul class="sui-nav nav-tabs tab-wraped">
+                            <li class="active">
+                                <a href="#return" data-toggle="tab" class="padding-left-zero">
+                                    <h3>我要退货</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#no-return" data-toggle="tab" class="border-right-zero">
+                                    <h3>我要退款（无需退货）</h3>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content tab-wraped">
+                            <div id="return" class="tab-pane active">
+                                <div class="trade-return-form">
+                                    <form class="sui-form form-horizontal">
+                                        <div class="control-group">
+                                            <label class="control-label"><em>*</em> 退货原因：</label>
+                                            <div class="controls double-input">
+                                                <span class="sui-dropdown dropdown-bordered select">
+                                                    <span class="dropdown-inner">
+                                                        <a id="drop4" role="button" data-toggle="dropdown" href="#" class="dropdown-toggle">
+                                                            <input value="1" name="zt" type="hidden"><i class="caret"></i><span>管理员</span>
+                                                        </a>
+                                                          <ul id="menu4" role="menu" aria-labelledby="drop4" class="sui-dropdown-menu">
+                                                              <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="javascript:void(0);" value="1">管理员</a></li>
+                                                          </ul>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label"><em>*</em> 退货金额：</label>
+                                            <div class="controls double-input">
+                                                <input type="text"/>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label vertical-align-top">退货说明：</label>
+                                            <div class="controls">
+                                                <textarea></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="control-group">
+                                            <label class="control-label vertical-align-top">退货说明：</label>
+                                            <div class="controls">
+                                                <div class="user-custom-file-upload-btn">
+                                                    <input type="file" class="user-custom-file-upload-btn">
+                                                    <label class="www-file-upload"><img src="../../static/user/images/image-icon.jpg"> 选择您要上传的图片</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="control-group margin-bottom-0">
+                                            <label class="control-label"></label>
+                                            <div class="controls">
+                                                <button class="sui-btn btn-primary" type="submit"><font><font>提交</font></font></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div id="no-return" class="tab-pane">
+                                <p>Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park</p>
+                            </div>
                         </div>
                     </div>
-                </form>
             </div>
-            <div class="user-mail-verify-btm-section grey-bg after-login-sections-padding">
-                <h5 class="heading">为什么要进行身份验证？</h5>
-                <ol>
-                    <li>为保障您的账户信息安全，在变更账户中的重要信息时需要身份验证，感谢您的理解与支持。</li>
-                    <li>验证身份遇到问题？请提供用户名，手机号，历史发票，点击联系我司在线客服或者拨打4006065500转7号键咨询。</li>
-                </ol>
             </div>
         </div>
-        <!-- Verify Mail Section End-->
+        <!-- Return Section End-->
 
     </div>
 </div>

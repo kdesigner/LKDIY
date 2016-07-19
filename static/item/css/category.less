@@ -31,6 +31,15 @@
     }
   }
 }
+.item-category-filters{
+  .custom-breadcrumb{
+    display: inline-block;
+    margin-right: 20px;
+  }
+  .item-selected-filters{
+    display: inline-block;
+  }
+}
 .item-form-filters{
   border-top:3px solid @CartBtnBorder;
 
@@ -71,6 +80,10 @@
           line-height: 15px;
           vertical-align: middle;
           border-radius: 2px;
+
+          &.icon-sort-up{
+            line-height: 24px;
+          }
         }
         &:hover,&.active{
           color: @baseColor;
@@ -169,6 +182,10 @@
     padding: 0;
     margin: 0;
 
+    &.item-multiple-list{
+      display: none;
+    }
+
     li{
       float: left;
       min-width: 90px;
@@ -207,6 +224,9 @@
         margin-bottom: 8px;
         white-space: nowrap;
       }
+      &.item-more{
+        display: none;
+      }
     }
 
     &.item-checkbox-radio-list-wide{
@@ -242,7 +262,8 @@
 
   .item-more-filter{
     text-align: left;
-    margin-left: 63px;
+    display: block;
+    width: 100%;
 
     .item-input-filter{
       height: 26px;
@@ -625,8 +646,8 @@
 
 /*--- category empty start ---*/
 .item-category-empty{
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 
   p{
     font-size: @baseFontLarge;
@@ -650,7 +671,6 @@
   .item-top-heading-and-pages{
     border-bottom: 1px solid @primaryColor;
     padding-bottom: 10px;
-    /*kuljit*/
     padding-left: 10px;
     padding-right: 10px;
     h2{
@@ -671,7 +691,7 @@
         float: left;
         color: #222222;
         font-size: @baseFontLarge;
-      }/*kuljit*/
+      }
       .back-arrow{
         background-image:url("../../common/images/spirit_icons.png");
         background-position:385px 188px;
@@ -682,7 +702,7 @@
     }
   }
   .item-single-product{
-    width: 235px;/*kuljit*/
+    width: 235px;
     padding: 18px 15px;
     min-height: 352px;
     margin-bottom: 0;

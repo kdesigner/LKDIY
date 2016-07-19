@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../static/common/plugins/sui/css/sui.min.css">
     <link rel="stylesheet" href="../../static/common/css/global.css">
     <link rel="stylesheet" href="../../static/common/css/common.css">
-    <link rel="stylesheet" href="../../static/user/css/change-password.css">
+    <link rel="stylesheet" href="../../static/user/css/avatar-upload.css">
 </head>
 <body>
 <!-- Top Navbar START -->
@@ -146,65 +146,49 @@
                 <h5>安全中心</h5>
                 <ul>
                     <li><a href="#">修改密码</a> </li>
-                    <li><a href="#" class="active">绑定邮箱</a> </li>
+                    <li><a href="#" class="active last-child-link">绑定邮箱</a> </li>
                 </ul>
             </div>
         </div>
         <!-- Login Sidebar End -->
-        <!-- Verify Mail Section Start-->
-        <div class="column after-login-right-content-section">
-            <div class="user-mail-verify-top-section grey-bg margin-bottom-30 after-login-sections-padding">
-                <h5 class="heading">修改登录密码</h5>
-                <form class="sui-form form-horizontal user-change-password sui-validate">
-                    <div class="control-group">
-                        <label class="control-label">已验证手机：</label>
-                        <div class="controls single-input">
-                            <span class="sui-text-left">187*****854</span>
+        <!-- Avatar Upload Section Start-->
+        <div class="column after-login-right-content-section user-avatar-upload-section-outr">
+            <div class="user-mail-verify-top-section grey-bg after-login-sections-padding width-100 ">
+                <h5 class="heading">头像照片</h5>
+                    <div class="user-avatar-upload-left-section">
+                        <form action="#" class="user-upload-form">
+                            <div class="user-custom-file-upload-btn">
+                                <input type="file" class="user-custom-file-upload-btn"/>
+                                <label><img src="../../static/user/images/image-icon.jpg"/> 选择您要上传的头像</label>
+                            </div>
+                            <span>仅支持JPG GIF PNG JPEG BMP，文件小于2M</span>
+                            <div class="user-uploaded-image-area">
+                                <img src="../../static/user/images/uploaded-image.png"/>
+                            </div>
+                            <button class="sui-btn btn-primary" type="submit">提交</button>
+                        </form>
+                    </div>
+                    <div class="user-avatar-right-thumbnails">
+                        <div class="user-preview-images-heading">
+                            <h2>效果预览</h2>
+                            <span>您上传的图片会自动生成两种尺寸，请注意尺寸的头像是否清晰</span>
+                        </div>
+                        <div class="user-preview-image-sizes">
+                            <div class="user-100-100-image">
+                                <img src="../../static/user/images/100x100.jpg"/>
+                            </div>
+                            <span>100*100像素</span>
+                        </div>
+                        <div class="user-preview-image-sizes">
+                            <div class="user-50-50-image">
+                                <img src="../../static/user/images/100x100.jpg"/>
+                            </div>
+                            <span>50*50像素</span>
                         </div>
                     </div>
-                    <div class="control-group">
-                        <label class="control-label">请填写手机校验码：</label>
-                        <div class="controls double-input">
-                            <input type="text" name="demo1" class="grey-bg" data-rules="required|email"/>
-                            <input type="button" value="获取短信校验码" class="sui-btn btn-xlarge"/>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label">原始密码：</label>
-                        <div class="controls double-input">
-                            <input type="password" name="demo2" class="grey-bg" data-rules="required"/>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label">新密码：</label>
-                        <div class="controls double-input">
-                            <input type="password" name="demo3" class="grey-bg" data-rules="required"/>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label">确认密码：</label>
-                        <div class="controls double-input">
-                            <input type="password" name="demo4" class="grey-bg" data-rules="required"/>
-                        </div>
-                    </div>
-
-                    <div class="control-group margin-bottom-0">
-                        <label class="control-label"></label>
-                        <div class="controls">
-                            <button type="submit" class="sui-btn btn-primary">提交</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="user-mail-verify-btm-section grey-bg after-login-sections-padding">
-                <h5 class="heading">为什么要进行身份验证？</h5>
-                <ol>
-                    <li>为保障您的账户信息安全，在变更账户中的重要信息时需要身份验证，感谢您的理解与支持。</li>
-                    <li>验证身份遇到问题？请提供用户名，手机号，历史发票，点击联系我司在线客服或者拨打4006065500转7号键咨询。</li>
-                </ol>
             </div>
         </div>
-        <!-- Verify Mail Section End-->
+        <!-- Avatar Upload Section End-->
 
     </div>
 </div>

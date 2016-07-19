@@ -166,6 +166,10 @@ p {
 .sui-form .height-auto[type="text"] {
   height: auto;
 }
+/*kuljit*/
+.vertical-align-top {
+  vertical-align: top;
+}
 /******************************************************
    *Helper Classes CSS End
 ******************************************************/
@@ -281,13 +285,6 @@ p {
 }
 .padding-bottom-zero {
   padding-bottom: 0;
-}
-/*kuljit*/
-.padding-left-zero {
-  padding-left: 0;
-}
-.padding-right-zero {
-  padding-right: 0;
 }
 /******************************************************
    *Helper Element CSS END
